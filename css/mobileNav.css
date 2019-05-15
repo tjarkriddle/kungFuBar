@@ -1,0 +1,162 @@
+* {
+	font: "Helvetica", sans-serif;
+	box-sizing: border-box;
+}
+
+body, html {
+  	height: 100%;
+  	margin: 0 auto;
+  	font: 15px "Helvetica", sans-serif;
+  	color: #777;
+  	background-color: black;
+
+}
+
+h3 { 
+  display: block;
+  text-align: center;
+  font-size: 1.17em;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.mainNav {
+	background-color: black;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	text-align: center;
+  font: 18px "Helvetica", sans-serif;
+  letter-spacing: 5px;
+
+}
+
+.mainNav a {
+	font-size: 30px;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	display: inline-block;
+  font: 18px "Helvetica", sans-serif;
+  letter-spacing: 5px;
+}
+
+.mainNav a:hover {
+	background-color: white;
+	color: black;
+}
+
+.mainNav .icon {
+	display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+	.mainNav a {display: none;}
+	.mainNav a.icon{display: block; float: right;}
+
+}
+
+@media screen and (max-width: 900px){
+	.mainNav.responsive {position: fixed;}
+	.mainNav.responsive .icon {position: fixed;
+		top: 0;
+		right:0;}
+
+		.mainNav.responsive a {
+			display: block;
+			text-align: center;
+		}
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+
+
+@media only screen and (max-width: 600px){
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
+    background-attachment: scroll;
+  }
+
+}
+
+.bgimg-1 {
+  background-image: url("../imgs/image_1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../imgs/image_2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../imgs/image_3.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("../imgs/image_4.jpg");
+  min-height: 400px;
+}
+
+.bgimg-5 {
+  background-image: url("../imgs/image_5.jpg");
+  min-height: 400px;
+}
+
+.bgimg-6 {
+  background-image: url("../imgs/image_6.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.barSlides {
+  width: 100%;
+  padding: 10% 20%;
+  display: none;
+}
+
+
+
+.caption span.border {
+  background-color: black;
+  float: center;
+  color: #fff;
+  padding: 18px 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  line-height: 55px;
+  text-align: center;
+  margin: auto;
+}
+
+
+#aboutus, #photos, #barmenu, #contact, #related {
+	color: black;
+	background-color:white;
+	text-align:center;
+	padding:10px 80px;
+	text-align: justify;
+  font-size:40px;
+  letter-spacing: 7px;
+}
+
+
