@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Young's Kung Fu Action Theater and Laundry</title>
+
+		<link rel="stylesheet" type="text/css" href="css/mobileNav.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+
+
+	<body>
+		
+		<nav class="mainNav" id="responsiveNav">
+
+			<a href="#aboutus">About Us</a>
+			<a href="#photos">Photos</a>
+			<a href="#barmenu">Bar Menu</a>
+			<a href="#contact">Contact</a>
+			<a href="#related">Related</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+		</nav>
+
+		<div class="bgimg-1">
+  			<div class="caption">
+    			<span class="border">Young's Kung Fu Action Theater and Laundry</span>
+  			</div>
+		</div>
+
+		<div id="aboutus">
+	  		<h3>About Us</h3>
+		</div>
+
+		
+		<div class="bgimg-2">
+  			<div class="caption2">
+    			<span class="border2"> Young's Kung Fu Action Theater and Laundry is a local watering hole in the Tenderloin distrcit of San Francisco. It celebrates the golden era of martial arts movies in a modern cocktail lounge.  </span>
+    			<br>
+    			<br>
+    		<div class="map">
+    			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.718685490408!2d-122.4183209!3d37.7858289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7847af302653f4b6!2sKung+Fu+Action+Theatre!5e0!3m2!1sen!2sus!4v1558032330914!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:10px;" allowfullscreen></iframe></div>
+  			</div>
+		</div>
+
+
+		<div id="photos">
+	  		<h3>Photos</h3>
+		</div>
+
+
+		<div class="bgimg-3">
+  		<img class="barSlides" src="photos/photo_4.jpg">
+  		<img class="barSlides" src="photos/photo_5.jpg">
+  		<img class="barSlides" src="photos/photo_6.jpg">
+  		<img class="barSlides" src="photos/photo_7.jpg">
+  		<img class="barSlides" src="photos/photo_8.jpg">
+  		<img class="barSlides" src="photos/photo_9.jpg">
+  		<img class="barSlides" src="photos/photo_10.jpg">
+
+  		<button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+  		<button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+
+
+		<div id="barmenu">
+	  		<h3>Bar Menu</h3>
+		</div>
+
+
+		<div class="bgimg-4">
+  			<div class="caption4">
+    			<span class="border4">Full Bar featuring seasonal drink specials. <br> Bottled Beer and draft options are also available and rotate on a monthly basis. </span>
+  			</div>
+		</div>
+
+
+		<div id="contact">
+	  		<h3>Contact</h3>
+		</div>
+
+
+		<div class="bgimg-5">
+  			<div class="caption5">
+    			<span class="border5"> General Manager <br> Jeff Ortega <br> (510) 697 6534 <br> jeffortega@hotmail.com</span>
+  			</div>
+		</div>
+
+
+		<div id="related">
+	  		<h3>Related</h3>
+		</div>
+
+
+		<div class="bgimg-6">
+  			<div class="kozyKar">
+    			 <a href="https://www.kozykar.com"> 
+    			<img src="photos/kozykar.png" width="100%"> </a> </span> 
+  			</div>
+		</div>
+
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("barSlides");
+		if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+
+				}
+
+				x[slideIndex-1].style.display = "block";
+
+	}
+
+	</script>
+
+
+	<script>
+		function myFunction () {
+		var x = document.getElementById("responsiveNav");
+		if (x.className === "mainNav")	{
+			x.className += " responsive";
+		} else {
+			x.className = "mainNav"
+		}
+
+
+		}
+
+
+	</script>
+
+
+
+
+	</body>
+
+
+</html>
